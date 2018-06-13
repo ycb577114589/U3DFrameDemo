@@ -153,7 +153,6 @@ namespace MainClient
                 foreach(var frameControlList in frameAsyn.Keys)
                 {
                     IInputListener listener = _inputListeners[frameControlList.Uin];
-                    Debug.Log(frameControlList.Uin);
                     foreach(var con in frameControlList.Keys)
                     {
                         #region 解析按键

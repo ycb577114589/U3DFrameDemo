@@ -5,8 +5,8 @@ namespace MainClient
 {
     class CharacterMoveUnit
     {
-        public Vector3 _rotation = Vector3.zero;
         private float _destRotateY = 555f;
+        public Vector3 _rotation = Vector3.zero;
         public Vector3 position = Vector3.zero;
         
         CharacterBase _host = null;
@@ -23,7 +23,6 @@ namespace MainClient
             get { return _rotation; }
             set
             {
-
                 _rotation = value;
                 SetDestRotation(_rotation.y, true);
                 _host.ThisView.UpdateRotation(_rotation);
@@ -73,11 +72,11 @@ namespace MainClient
                 }
                 return true;
             }
-
             return false;
         }
         public void Update()
         {
+            // 轻易不会调
             if (_destRotateY < 500f)
             {
                 _rotation.y = _destRotateY;

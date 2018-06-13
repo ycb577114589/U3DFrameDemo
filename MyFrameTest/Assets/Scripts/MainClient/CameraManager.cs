@@ -10,7 +10,29 @@ namespace MainClient
         private Camera _camera = null;
         private Transform _target = null;
         private Vector3 _lastTargetPosition = Vector3.zero;
-
+         
+        public bool CanRotate
+        {
+            get
+            {
+                return _canRotate;
+            }
+            set
+            {
+                _canRotate = value;
+            }
+        }
+        public Vector3 Rotation
+        {
+            get
+            {
+                return _rotation;
+            }
+            set
+            {
+                _rotation = value;
+            }
+        }
         public void SetCamera(Transform camera, Vector3 offset)
         {
             _cameraTrans = camera;
@@ -22,14 +44,15 @@ namespace MainClient
         {
             _target = target;
             _lastTargetPosition = target.position;
+            _smoothRotate.Stop();
         }
         public void Clear()
         {
             _target = null;
             _camera = null;
             _cameraTrans = null;
-        }
-
+            _smoothRotate.Stop();
+        } 
         public void Update(float delta)
         {
             if (_target == null || _camera == null)
@@ -61,6 +84,7 @@ namespace MainClient
             {
                 _cameraTrans.position = Vector3.Lerp(_cameraTrans.position, dest, speed * delta);
             }
-        }
+
+        } 
     }
 }
