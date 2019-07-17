@@ -120,10 +120,11 @@ namespace MainClient
         #region 方向键相关
         public void OnMove(float angle,MoveType moveType)
         {
-            if (moveType == MoveType.NONE) { return; }
+            
+            if (moveType == MoveType.NONE) { return; } 
             if (moveType == MoveType.STOP)
             {
-                _action.ChangeAction(CharacterAction.IDLE);
+                _action.ChangeMoveAction(CharacterAction.IDLE);
             }
             else
             {

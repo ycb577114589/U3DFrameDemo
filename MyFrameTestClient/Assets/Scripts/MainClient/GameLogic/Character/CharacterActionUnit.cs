@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using CommonLib;
+using UnityEngine;
 
 namespace MainClient
 {
@@ -141,14 +142,13 @@ namespace MainClient
             }
             CharacterAction action = CharacterAction.IDLE;
             if (_actionCache.Count > 0)
-            {
+            { 
                 action = _actionCache.Dequeue();
             }
             else if (_currentMoveAction != CharacterAction.UNDEFINED)
-            {
+            { 
                 action = _currentMoveAction;
-            }
-
+            } 
             ChangeAction(action, true);
         }
         public bool ChangeAction(CharacterAction action,bool isForce = false)
@@ -163,7 +163,7 @@ namespace MainClient
         public bool ChangeMoveAction(CharacterAction action)
         {
             if (action != _currentAction)
-            {
+            {    
                 _currentMoveAction = action;
                 if (ChangeAction(_currentMoveAction))
                 {

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="GroundMine.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Common" t="Include">
+            <e p="Common.cs" t="Include" />
+            <e p="Interface" t="Include">
+              <e p="IObjectPool.cs" t="Include" />
+              <e p="ITick.cs" t="Include" />
+            </e>
+            <e p="ObjectPool.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+            <e p="SmoothMove.cs" t="Include" />
+            <e p="SwitchQueue.cs" t="Include" />
+          </e>
+          <e p="Entrance.cs" t="Include" />
+          <e p="MainClient" t="Include">
+            <e p="CameraManager.cs" t="Include" />
+            <e p="GameLogic" t="Include">
+              <e p="Character" t="Include">
+                <e p="CharacterActionUnit.cs" t="Include" />
+                <e p="CharacterBase.cs" t="Include" />
+                <e p="CharacterConfig.cs" t="Include" />
+                <e p="CharacterDataUnit.cs" t="Include" />
+                <e p="CharacterDefine.cs" t="Include" />
+                <e p="CharacterManager.cs" t="Include" />
+                <e p="CharacterMoveUnit.cs" t="Include" />
+                <e p="CharacterView.cs" t="Include" />
+              </e>
+              <e p="CommonMoveUnit.cs" t="Include" />
+            </e>
+            <e p="GameSync" t="Include">
+              <e p="GameSyncManager.cs" t="Include" />
+            </e>
+            <e p="Input" t="Include">
+              <e p="InputDefine.cs" t="Include" />
+              <e p="InputHandle.cs" t="Include" />
+            </e>
+            <e p="MainClient.cs" t="Include" />
+            <e p="NetWork" t="Include">
+              <e p="ClientNetManager.cs" t="Include" />
+              <e p="NetLib" t="Include">
+                <e p="MyTcpClient.cs" t="Include" />
+                <e p="NetDefine.cs" t="Include" />
+                <e p="Protocol.cs" t="Include" />
+                <e p="ProtocolHead.cs" t="Include" />
+              </e>
+              <e p="Protocol" t="Include">
+                <e p="Request" t="Include">
+                  <e p="ProtocolFrameNotify.cs" t="Include" />
+                  <e p="ProtolRequestStart.cs" t="Include" />
+                </e>
+                <e p="Response" t="Include">
+                  <e p="ProtocolSCFrameNotify.cs" t="Include" />
+                  <e p="ProtocolStartGameNotify.cs" t="Include" />
+                  <e p="ProtoResponseStart.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ProtocolFrame.cs" t="Include" />
+              <e p="ptcregister.cs" t="Include" />
+            </e>
+            <e p="Ticker" t="Include">
+              <e p="Ticker.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="BattleUI" t="Include">
+                <e p="BattleUIManager.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="testProtobuf" t="Include">
+          <e p="Message.cs" t="Include" />
+          <e p="MyClient.cs" t="Include" />
+          <e p="testProto.cs" t="Include" />
+        </e>
+      </e>
+      <e p="MyFrameTestClient.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_MyFrameTestClient.2061570948.00" t="ExcludeRecursive" />
+  </component>
+</project>

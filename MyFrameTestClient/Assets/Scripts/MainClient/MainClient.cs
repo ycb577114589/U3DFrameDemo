@@ -107,9 +107,9 @@ namespace MainClient
             _mainPlayer = CharacterManager.Instance.GetNewCharacter();
             _inputHandle.AddInputListener(_mainPlayer);
             _mainPlayer.ChangeCharacter(1);
-            //Test();
+            Test();
             //帧同步模式
-            ClientNetManager.Instance.Connect("127.0.0.1", 5678);
+            //ClientNetManager.Instance.Connect("127.0.0.1", 5678);
         }
         
         //非帧同步模式
