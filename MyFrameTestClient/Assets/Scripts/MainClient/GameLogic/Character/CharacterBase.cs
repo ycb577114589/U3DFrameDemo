@@ -1,10 +1,12 @@
 ﻿using System;
+using BehaviorDesigner.Runtime;
 using CommonLib;
 using UnityEngine;
+using CommonLib.DataCommon;
 
 namespace MainClient
 {
-    public class CharacterBase : IInputListener, IFixedTick, ITick, IObjectPool
+    public class CharacterBase : IInputListener, IFixedTick, ITick, IObjectPool 
     {
         private CharacterMoveUnit _move = null;
         private CharacterConfig _characterConfig = null;
@@ -12,6 +14,7 @@ namespace MainClient
         private CharacterDataUnit _dataUnit = null;
         private CharacterView _view = null;
 
+        private BehaviorTreeData m_BehaviorTreeData = null;
 
         #region 构造及其初始化
         /// <summary>
@@ -23,6 +26,7 @@ namespace MainClient
             _view = new CharacterView();
             _action = new CharacterActionUnit(this);
             _dataUnit = new CharacterDataUnit();
+            m_BehaviorTreeData = new BehaviorTreeData();
         }
         public void Init()
         {
@@ -30,6 +34,7 @@ namespace MainClient
             _view.Init();
             _dataUnit.Init();
             _action.Init();
+            m_BehaviorTreeData.Init();
             OnMove(0f, MoveType.STOP);
         }
         #endregion
